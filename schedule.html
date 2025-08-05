@@ -1,10 +1,10 @@
 <!-- schedule.html -->
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kor">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이벤트 일정 및 가격 | 발보아 댄스 페스티벌 2025</title>
+    <title>Festival Schedule & Pricing | Balboa Dance Festival 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @layer utilities {
@@ -15,6 +15,7 @@
     </style>
   </head>
   <body class="min-h-screen flex flex-col bg-white text-gray-900">
+    <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div
         class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3"
@@ -48,22 +49,26 @@
         <nav>
           <ul class="hidden md:flex space-x-6 text-sm font-medium">
             <li>
-              <a href="./schedule.html" class="hover:text-blue-500">이벤트</a>
+              <a href="./schedule.html" class="hover:text-blue-500">Event</a>
             </li>
             <li>
               <a href="./instructors.html" class="hover:text-blue-500"
-                >강사 소개</a
+                >Instructors</a
               >
             </li>
             <li>
-              <a href="./staffs.html" class="hover:text-blue-500">스텝 소개</a>
+              <a href="./staffs.html" class="hover:text-blue-500">Staffs</a>
             </li>
             <li>
-              <a href="./judges.html" class="hover:text-blue-500">저지 소개</a>
+              <a href="./judges.html" class="hover:text-blue-500">Judges</a>
             </li>
-            <li><a href="./goods.html" class="hover:text-blue-500">굿즈</a></li>
             <li>
-              <a href="./awards.html" class="hover:text-blue-500">어워드</a>
+              <a href="./goods.html" class="hover:text-blue-500"
+                >Goods / Merchandise</a
+              >
+            </li>
+            <li>
+              <a href="./awards.html" class="hover:text-blue-500">Awards</a>
             </li>
           </ul>
         </nav>
@@ -74,12 +79,12 @@
         id="mobileMenu"
         class="hidden md:hidden fixed top-0 right-0 w-1/2 h-screen bg-gray-800 text-white z-40 flex flex-col items-start px-6 pt-16 space-y-4 transition duration-300"
       >
-        <a href="./schedule.html" class="hover:underline">이벤트</a>
-        <a href="./instructors.html" class="hover:underline">강사 소개</a>
-        <a href="./staffs.html" class="hover:underline">스텝 소개</a>
-        <a href="./judges.html" class="hover:underline">저지 소개</a>
-        <a href="./goods.html" class="hover:underline">굿즈</a>
-        <a href="./awards.html" class="hover:underline">어워드</a>
+        <a href="./schedule.html" class="hover:underline">Event</a>
+        <a href="./instructors.html" class="hover:underline">Instructors</a>
+        <a href="./staffs.html" class="hover:underline">Staffs</a>
+        <a href="./judges.html" class="hover:underline">Judges</a>
+        <a href="./goods.html" class="hover:underline">Goods / Merchandise</a>
+        <a href="./awards.html" class="hover:underline">Awards</a>
       </div>
     </header>
 
@@ -88,9 +93,9 @@
       <!-- 일정 안내 -->
       <section class="pt-24 pb-12 px-6 bg-gray-50">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl font-bold mb-4">페스티벌 일정</h2>
+          <h2 class="text-3xl font-bold mb-4">Festival Schedule</h2>
           <p class="text-gray-600 text-lg">
-            2025년 9월 19일(금) ~ 21일(일), 서울 문화예술센터
+            September 19–21, 2025 (Fri–Sun), Seoul Arts Center
           </p>
         </div>
       </section>
@@ -98,25 +103,27 @@
       <!-- 가격 안내 -->
       <section class="py-16 px-6 bg-white">
         <div class="max-w-5xl mx-auto">
-          <h3 class="text-2xl font-semibold text-center mb-10">참가비 안내</h3>
+          <h3 class="text-2xl font-semibold text-center mb-10">Ticket Price</h3>
           <div class="grid md:grid-cols-3 gap-8">
             <div class="border rounded-lg shadow p-6 text-center">
               <h4 class="text-xl font-bold mb-2">Early Bird</h4>
-              <p class="text-gray-500 mb-4">~ 7월 31일까지</p>
+              <p class="text-gray-500 mb-4">Until July 31</p>
               <p class="text-2xl font-bold mb-4">₩190,000</p>
-              <button class="btn-primary">신청하기</button>
+              <button class="btn-primary">Click to apply.</button>
             </div>
             <div class="border rounded-lg shadow p-6 text-center">
               <h4 class="text-xl font-bold mb-2">Regular</h4>
-              <p class="text-gray-500 mb-4">8월 1일 ~ 9월 10일</p>
+              <p class="text-gray-500 mb-4">August 1 – September 10</p>
               <p class="text-2xl font-bold mb-4">₩220,000</p>
-              <button class="btn-primary">신청하기</button>
+              <button class="btn-primary">Click to apply.</button>
             </div>
             <div class="border rounded-lg shadow p-6 text-center">
-              <h4 class="text-xl font-bold mb-2">Late / 현장</h4>
-              <p class="text-gray-500 mb-4">9월 11일 ~ 행사 당일</p>
+              <h4 class="text-xl font-bold mb-2">Late / On-site</h4>
+              <p class="text-gray-500 mb-4">
+                From September 11 through the event day
+              </p>
               <p class="text-2xl font-bold mb-4">₩250,000</p>
-              <button class="btn-primary">신청하기</button>
+              <button class="btn-primary">Click to apply.</button>
             </div>
           </div>
         </div>
