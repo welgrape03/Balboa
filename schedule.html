@@ -14,7 +14,7 @@
       }
     </style>
   </head>
-  <body class="bg-white text-gray-900">
+  <body class="min-h-screen flex flex-col bg-white text-gray-900">
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div
@@ -50,45 +50,48 @@
       </div>
     </header>
 
-    <!-- 일정 안내 -->
-    <section class="pt-24 pb-12 px-6 bg-gray-50">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-4">페스티벌 일정</h2>
-        <p class="text-gray-600 text-lg">
-          2025년 9월 19일(금) ~ 21일(일), 서울 문화예술센터
-        </p>
-      </div>
-    </section>
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- 일정 안내 -->
+      <section class="pt-24 pb-12 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">페스티벌 일정</h2>
+          <p class="text-gray-600 text-lg">
+            2025년 9월 19일(금) ~ 21일(일), 서울 문화예술센터
+          </p>
+        </div>
+      </section>
 
-    <!-- 가격 안내 -->
-    <section class="py-16 px-6 bg-white">
-      <div class="max-w-5xl mx-auto">
-        <h3 class="text-2xl font-semibold text-center mb-10">참가비 안내</h3>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="border rounded-lg shadow p-6 text-center">
-            <h4 class="text-xl font-bold mb-2">Early Bird</h4>
-            <p class="text-gray-500 mb-4">~ 7월 31일까지</p>
-            <p class="text-2xl font-bold mb-4">₩190,000</p>
-            <button class="btn-primary">신청하기</button>
-          </div>
-          <div class="border rounded-lg shadow p-6 text-center">
-            <h4 class="text-xl font-bold mb-2">Regular</h4>
-            <p class="text-gray-500 mb-4">8월 1일 ~ 9월 10일</p>
-            <p class="text-2xl font-bold mb-4">₩220,000</p>
-            <button class="btn-primary">신청하기</button>
-          </div>
-          <div class="border rounded-lg shadow p-6 text-center">
-            <h4 class="text-xl font-bold mb-2">Late / 현장</h4>
-            <p class="text-gray-500 mb-4">9월 11일 ~ 행사 당일</p>
-            <p class="text-2xl font-bold mb-4">₩250,000</p>
-            <button class="btn-primary">신청하기</button>
+      <!-- 가격 안내 -->
+      <section class="py-16 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+          <h3 class="text-2xl font-semibold text-center mb-10">참가비 안내</h3>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="border rounded-lg shadow p-6 text-center">
+              <h4 class="text-xl font-bold mb-2">Early Bird</h4>
+              <p class="text-gray-500 mb-4">~ 7월 31일까지</p>
+              <p class="text-2xl font-bold mb-4">₩190,000</p>
+              <button class="btn-primary">신청하기</button>
+            </div>
+            <div class="border rounded-lg shadow p-6 text-center">
+              <h4 class="text-xl font-bold mb-2">Regular</h4>
+              <p class="text-gray-500 mb-4">8월 1일 ~ 9월 10일</p>
+              <p class="text-2xl font-bold mb-4">₩220,000</p>
+              <button class="btn-primary">신청하기</button>
+            </div>
+            <div class="border rounded-lg shadow p-6 text-center">
+              <h4 class="text-xl font-bold mb-2">Late / 현장</h4>
+              <p class="text-gray-500 mb-4">9월 11일 ~ 행사 당일</p>
+              <p class="text-2xl font-bold mb-4">₩250,000</p>
+              <button class="btn-primary">신청하기</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-10 text-center mt-10">
+    <footer class="bg-gray-800 text-white py-10 text-center">
       <p class="text-sm">© 2025 Balboa Dance Festival | balboa@example.com</p>
       <div class="mt-2 space-x-4">
         <a href="#" class="hover:underline">Instagram</a>

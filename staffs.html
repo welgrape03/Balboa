@@ -14,7 +14,7 @@
       }
     </style>
   </head>
-  <body class="bg-gray-50 text-gray-900">
+  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900">
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div
@@ -50,50 +50,53 @@
       </div>
     </header>
 
-    <!-- 스텝 소개 -->
-    <section class="pt-24 pb-16 px-6">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-4">2025 운영 스텝</h2>
-        <p class="text-gray-600 mb-12">
-          행사를 위해 헌신하는 열정적인 스텝진을 소개합니다.
-        </p>
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- 스텝 소개 -->
+      <section class="pt-24 pb-16 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">2025 운영 스텝</h2>
+          <p class="text-gray-600 mb-12">
+            행사를 위해 헌신하는 열정적인 스텝진을 소개합니다.
+          </p>
 
-        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-          <!-- 스텝 카드 예시 -->
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="스텝1"
-              class="w-full h-48 object-cover rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold">이지영</h3>
-            <p class="text-gray-500 text-sm mt-1">기획 총괄</p>
+          <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+            <!-- 스텝 카드 예시 -->
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="스텝1"
+                class="w-full h-48 object-cover rounded mb-4"
+              />
+              <h3 class="text-xl font-semibold">이지영</h3>
+              <p class="text-gray-500 text-sm mt-1">기획 총괄</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="스텝2"
+                class="w-full h-48 object-cover rounded mb-4"
+              />
+              <h3 class="text-xl font-semibold">홍성우</h3>
+              <p class="text-gray-500 text-sm mt-1">디자인 / 웹</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="스텝3"
+                class="w-full h-48 object-cover rounded mb-4"
+              />
+              <h3 class="text-xl font-semibold">최예진</h3>
+              <p class="text-gray-500 text-sm mt-1">파트너 커뮤니케이션</p>
+            </div>
+
+            <!-- 더 많은 스텝 카드 추가 가능 -->
           </div>
-
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="스텝2"
-              class="w-full h-48 object-cover rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold">홍성우</h3>
-            <p class="text-gray-500 text-sm mt-1">디자인 / 웹</p>
-          </div>
-
-          <div class="card">
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="스텝3"
-              class="w-full h-48 object-cover rounded mb-4"
-            />
-            <h3 class="text-xl font-semibold">최예진</h3>
-            <p class="text-gray-500 text-sm mt-1">파트너 커뮤니케이션</p>
-          </div>
-
-          <!-- 더 많은 스텝 카드 추가 가능 -->
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-10 text-center">

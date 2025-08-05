@@ -17,7 +17,7 @@
       }
     </style>
   </head>
-  <body class="bg-white text-gray-900">
+  <body class="min-h-screen flex flex-col bg-white text-gray-900">
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div
@@ -51,57 +51,59 @@
       </div>
     </header>
 
-    <!-- Hero -->
-    <section class="pt-24 bg-gray-50 text-center px-6 py-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">
-        발보아 댄스 페스티벌 2025
-      </h2>
-      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-        스윙댄스의 진수를 느낄 수 있는 3일간의 페스티벌! 국내외 최고의 강사진과
-        함께하는 발보아, 쉐그, 린디합의 향연
-      </p>
-      <div class="flex justify-center space-x-4">
-        <a href="./schedule.html" class="btn-primary">신청하러 가기</a>
-        <a href="./instructors.html" class="btn-outline">강사 소개</a>
-      </div>
-    </section>
-
-    <!-- 소개 -->
-    <section id="about" class="bg-white py-16 px-6">
-      <div class="max-w-4xl mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-6">이벤트 소개</h3>
-        <p class="text-gray-600 text-lg leading-relaxed">
-          발보아 댄스 페스티벌은 발보아와 린디합, 쉐그 등 다양한 스윙댄스를 함께
-          즐길 수 있는 국내 최대 규모의 댄스 페스티벌입니다. 파티, 대회, 워크숍,
-          라이브 공연까지 모든 스윙댄서들의 축제!
+    <main class="flex-grow">
+      <!-- Hero -->
+      <section class="pt-24 bg-gray-50 text-center px-6 py-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          발보아 댄스 페스티벌 2025
+        </h2>
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+          스윙댄스의 진수를 느낄 수 있는 3일간의 페스티벌! 국내외 최고의
+          강사진과 함께하는 발보아, 쉐그, 린디합의 향연
         </p>
-      </div>
-    </section>
+        <div class="flex justify-center space-x-4">
+          <a href="./schedule.html" class="btn-primary">신청하러 가기</a>
+          <a href="./instructors.html" class="btn-outline">강사 소개</a>
+        </div>
+      </section>
 
-    <!-- 카운트다운 -->
-    <section class="bg-gray-100 py-12 px-6">
-      <div class="max-w-4xl mx-auto text-center">
-        <h3 class="text-2xl font-semibold mb-4">페스티벌까지 남은 시간</h3>
-        <div class="flex justify-center gap-8 text-xl font-bold">
-          <div>
-            <span id="days">0</span>
-            <div class="text-sm">일</div>
-          </div>
-          <div>
-            <span id="hours">0</span>
-            <div class="text-sm">시간</div>
-          </div>
-          <div>
-            <span id="minutes">0</span>
-            <div class="text-sm">분</div>
-          </div>
-          <div>
-            <span id="seconds">0</span>
-            <div class="text-sm">초</div>
+      <!-- 소개 -->
+      <section id="about" class="bg-white py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h3 class="text-3xl font-bold mb-6">이벤트 소개</h3>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            발보아 댄스 페스티벌은 발보아와 린디합, 쉐그 등 다양한 스윙댄스를
+            함께 즐길 수 있는 국내 최대 규모의 댄스 페스티벌입니다. 파티, 대회,
+            워크숍, 라이브 공연까지 모든 스윙댄서들의 축제!
+          </p>
+        </div>
+      </section>
+
+      <!-- 카운트다운 -->
+      <section class="bg-gray-100 py-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h3 class="text-2xl font-semibold mb-4">페스티벌까지 남은 시간</h3>
+          <div class="flex justify-center gap-8 text-xl font-bold">
+            <div>
+              <span id="days">0</span>
+              <div class="text-sm">일</div>
+            </div>
+            <div>
+              <span id="hours">0</span>
+              <div class="text-sm">시간</div>
+            </div>
+            <div>
+              <span id="minutes">0</span>
+              <div class="text-sm">분</div>
+            </div>
+            <div>
+              <span id="seconds">0</span>
+              <div class="text-sm">초</div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-10 text-center">
