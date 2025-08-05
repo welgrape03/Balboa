@@ -1,0 +1,110 @@
+<!-- awards.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>어워드 수상자 | 발보아 댄스 페스티벌 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @layer utilities {
+        .section-title {
+          @apply text-2xl font-bold mb-4;
+        }
+        .award-box {
+          @apply bg-white border rounded-lg p-4 shadow mb-6;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3"
+      >
+        <a href="./index.html" class="text-xl font-bold"
+          >Balboa Dance Festival</a
+        >
+        <nav>
+          <ul class="hidden md:flex space-x-6 text-sm font-medium">
+            <li>
+              <a href="./schedule.html" class="hover:text-blue-500">이벤트</a>
+            </li>
+            <li>
+              <a href="./instructors.html" class="hover:text-blue-500"
+                >강사 소개</a
+              >
+            </li>
+            <li>
+              <a href="./staffs.html" class="hover:text-blue-500">스텝 소개</a>
+            </li>
+            <li>
+              <a href="./judges.html" class="hover:text-blue-500">저지 소개</a>
+            </li>
+            <li><a href="./goods.html" class="hover:text-blue-500">굿즈</a></li>
+            <li>
+              <a href="./awards.html" class="text-blue-600 font-semibold"
+                >어워드</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 어워드 소개 -->
+    <section class="pt-24 pb-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">2024 어워드 수상자</h2>
+        <p class="text-gray-600 mb-12">작년 페스티벌을 빛낸 최고의 무대!</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <!-- Best Social Dancer -->
+        <div class="award-box">
+          <h3 class="section-title">🏆 Best Social Dancer</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>홍수빈</li>
+            <li>James Tanaka</li>
+          </ul>
+        </div>
+
+        <!-- Best Competitor -->
+        <div class="award-box">
+          <h3 class="section-title">🏅 Best Competitor</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>김예지 & 최현우</li>
+            <li>Claire Wang & Leo Morita</li>
+          </ul>
+        </div>
+
+        <!-- Best Outfit -->
+        <div class="award-box">
+          <h3 class="section-title">👗 Best Outfit</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>박나래</li>
+            <li>이소연</li>
+          </ul>
+        </div>
+
+        <!-- Spirit of Balboa -->
+        <div class="award-box">
+          <h3 class="section-title">🌟 Spirit of Balboa</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>이진수</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 text-center">
+      <p class="text-sm">© 2025 Balboa Dance Festival | balboa@example.com</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">YouTube</a>
+      </div>
+    </footer>
+  </body>
+</html>

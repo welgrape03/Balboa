@@ -1,0 +1,135 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>발보아 댄스 페스티벌 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @layer utilities {
+        .btn-primary {
+          @apply bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition;
+        }
+        .btn-outline {
+          @apply border border-blue-600 text-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3"
+      >
+        <a href="./index.html" class="text-xl font-bold"
+          >Balboa Dance Festival</a
+        >
+        <nav>
+          <ul class="hidden md:flex space-x-6 text-sm font-medium">
+            <li>
+              <a href="./schedule.html" class="hover:text-blue-500">이벤트</a>
+            </li>
+            <li>
+              <a href="./instructors.html" class="hover:text-blue-500"
+                >강사 소개</a
+              >
+            </li>
+            <li>
+              <a href="./staffs.html" class="hover:text-blue-500">스텝 소개</a>
+            </li>
+            <li>
+              <a href="./judges.html" class="hover:text-blue-500">저지 소개</a>
+            </li>
+            <li><a href="./goods.html" class="hover:text-blue-500">굿즈</a></li>
+            <li>
+              <a href="./awards.html" class="hover:text-blue-500">어워드</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="pt-24 bg-gray-50 text-center px-6 py-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        발보아 댄스 페스티벌 2025
+      </h2>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+        스윙댄스의 진수를 느낄 수 있는 3일간의 페스티벌! 국내외 최고의 강사진과
+        함께하는 발보아, 쉐그, 린디합의 향연
+      </p>
+      <div class="flex justify-center space-x-4">
+        <a href="./schedule.html" class="btn-primary">신청하러 가기</a>
+        <a href="./instructors.html" class="btn-outline">강사 소개</a>
+      </div>
+    </section>
+
+    <!-- 소개 -->
+    <section id="about" class="bg-white py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-6">이벤트 소개</h3>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          발보아 댄스 페스티벌은 발보아와 린디합, 쉐그 등 다양한 스윙댄스를 함께
+          즐길 수 있는 국내 최대 규모의 댄스 페스티벌입니다. 파티, 대회, 워크숍,
+          라이브 공연까지 모든 스윙댄서들의 축제!
+        </p>
+      </div>
+    </section>
+
+    <!-- 카운트다운 -->
+    <section class="bg-gray-100 py-12 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-2xl font-semibold mb-4">페스티벌까지 남은 시간</h3>
+        <div class="flex justify-center gap-8 text-xl font-bold">
+          <div>
+            <span id="days">0</span>
+            <div class="text-sm">일</div>
+          </div>
+          <div>
+            <span id="hours">0</span>
+            <div class="text-sm">시간</div>
+          </div>
+          <div>
+            <span id="minutes">0</span>
+            <div class="text-sm">분</div>
+          </div>
+          <div>
+            <span id="seconds">0</span>
+            <div class="text-sm">초</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 text-center">
+      <p class="text-sm">© 2025 Balboa Dance Festival | balboa@example.com</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">YouTube</a>
+      </div>
+    </footer>
+
+    <!-- 카운트다운 스크립트 -->
+    <script>
+      const countdown = () => {
+        const eventDate = new Date("2025-09-19T00:00:00");
+        const now = new Date();
+        const diff = eventDate - now;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+      };
+      setInterval(countdown, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!-- instructors.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강사 소개 | 발보아 댄스 페스티벌 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @layer utilities {
+        .card {
+          @apply bg-white border rounded-lg shadow p-6 hover:shadow-lg transition;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3"
+      >
+        <a href="./index.html" class="text-xl font-bold"
+          >Balboa Dance Festival</a
+        >
+        <nav>
+          <ul class="hidden md:flex space-x-6 text-sm font-medium">
+            <li>
+              <a href="./schedule.html" class="hover:text-blue-500">이벤트</a>
+            </li>
+            <li>
+              <a href="./instructors.html" class="text-blue-600 font-semibold"
+                >강사 소개</a
+              >
+            </li>
+            <li>
+              <a href="./staffs.html" class="hover:text-blue-500">스텝 소개</a>
+            </li>
+            <li>
+              <a href="./judges.html" class="hover:text-blue-500">저지 소개</a>
+            </li>
+            <li><a href="./goods.html" class="hover:text-blue-500">굿즈</a></li>
+            <li>
+              <a href="./awards.html" class="hover:text-blue-500">어워드</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 강사 소개 섹션 -->
+    <section class="pt-24 pb-16 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">2025 초청 강사</h2>
+        <p class="text-gray-600 mb-12">
+          세계 각지에서 초청된 최고의 스윙댄서들과 함께하세요.
+        </p>
+
+        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <!-- 강사 카드 예시 -->
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="강사1"
+              class="w-full h-48 object-cover rounded mb-4"
+            />
+            <h3 class="text-xl font-semibold">Alex & June</h3>
+            <p class="text-gray-500 text-sm mt-1">USA</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="강사2"
+              class="w-full h-48 object-cover rounded mb-4"
+            />
+            <h3 class="text-xl font-semibold">Mia & Roberto</h3>
+            <p class="text-gray-500 text-sm mt-1">Italy</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="강사3"
+              class="w-full h-48 object-cover rounded mb-4"
+            />
+            <h3 class="text-xl font-semibold">혜린 & 준범</h3>
+            <p class="text-gray-500 text-sm mt-1">Korea</p>
+          </div>
+
+          <!-- 추가 강사 카드 계속 작성 가능 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 text-center">
+      <p class="text-sm">© 2025 Balboa Dance Festival | balboa@example.com</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">YouTube</a>
+      </div>
+    </footer>
+  </body>
+</html>
